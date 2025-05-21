@@ -13,7 +13,7 @@ public class UserSession {
     private WebSocketSession session;
     private boolean inCall;
 
-    public void send(final TextMessage message) throws IOException {
+    public synchronized void send(final TextMessage message) throws IOException {
         session.sendMessage(message);
     }
 
