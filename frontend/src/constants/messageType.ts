@@ -1,0 +1,9 @@
+export const JOIN = 'join';
+export const ACTIVE_USERS = 'activeUsers';
+export const CALL = 'call';
+export const CANCEL_CALL = 'cancelCall';
+export const ACCEPT_CALL = 'acceptCall';
+export const HANG_UP = 'hangUp';
+export const OFFER = 'offer';
+export const ANSWER = 'answer';
+export const CANDIDATE = 'candidate';
