@@ -1,6 +1,6 @@
 ---
 name: 💥 Issue Template
-about: Please provide as much detail as possible to help us understand and address
+about: Please provide as much detail as possible to help us understand and resolve
   the issue effectively.
 title: ''
 labels: bug, invalid, question
