@@ -50,11 +50,26 @@ The steps involved in the signaling process to connection establishment are as f
 
 <img src="https://github.com/user-attachments/assets/10f10d76-5519-4f07-880e-58b0c3b9b936" width="600"/>
 
+1. Both Peer A and Peer B set up their own media streams(microphone and video) - `Peer A`, `Peer B`
+2. One peer (Peer A) creates an SDP(offer) - `Peer A`
+3. Peer A sets the generated SDP(offer) as its local description and sends it to Peer B - `Peer A`
+4. Peer B receives the SDP(offer) and sets it as its remote description - `Peer B`
+5. Peer B creates an SDP(answer) in response to the received SDP(offer)  - `Peer B`
+6. Peer B sets its generated SDP(answer) as its local description and sends it to Peer A - `Peer B`
+7. Both peers exchange the ICE candidates they collected and add the remote candidates - `Peer A`, `Peer B`
+    - Each peer begins gathering its own ICE candidates after completing SDP creation.
+A peer can only add the other peer's candidates after setting the remote SDP
+8. Once ICE candidate exchange is complete and a viable candidate pair is found, the connection is successfully established - `Peer A`, `Peer B`
 
 
+
+
+<br>
 
 - Key APIs required for the signaling process
 
+
+<br>
 
 - Custom hooks created to utilize these key APIs in accordance with the tutorial code
 
