@@ -114,7 +114,7 @@ Unlike local environments, real-world peer networks are often restricted by NATs
 <br><br>
 
 ## 🏁 Getting Started
-
+writing...
 
 
 
@@ -125,9 +125,17 @@ Unlike local environments, real-world peer networks are often restricted by NATs
 If you encounter any issues or have questions about the tutorial code, I'd really appreciate it if you could open an issue using the "Issues" tab at the top of the repository page. I'll respond as soon as possible. To create an issue, please follow these steps:
 
 1. Click the Issues tab
-2. Click New Issue
-3. Select the custom issue template
-4. Fill in a clear and relevant title, complete each section, and click Submit new issue
+    <img width="991" alt="스크린샷 2025-05-23 오전 11 47 53" src="https://github.com/user-attachments/assets/1fa9a310-ea73-46e2-9736-4bf4370402f5" width="800"/>
+
+3. Click New Issue
+   <img width="974" alt="스크린샷 2025-05-23 오전 11 48 35" src="https://github.com/user-attachments/assets/3d873f75-84ce-49cc-b5f8-117c9d5af925" width="800"/>
+
+5. Select the custom issue template
+   <img width="903" alt="스크린샷 2025-05-23 오전 11 49 22" src="https://github.com/user-attachments/assets/562ce37c-1ba1-456a-b7b6-0cd5ec7dbe94" width="800"/>
+
+7. Fill in a clear and relevant title, complete each section, and click Submit new issue
+   <img width="825" alt="스크린샷 2025-05-23 오전 11 49 51" src="https://github.com/user-attachments/assets/179aa349-0ed3-406e-84f7-3b1bced81389" width="800"/>
+
 
 Thank you for your contribution!
 
