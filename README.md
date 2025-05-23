@@ -48,6 +48,7 @@ This tutorial handles not only signaling but all server communications via WebSo
 To establish a peer-to-peer connection, a signaling process is required.
 The steps involved in the signaling process to connection establishment are as follows.
 
+<img src="https://github.com/user-attachments/assets/10f10d76-5519-4f07-880e-58b0c3b9b936" width="600"/>
 
 
 
