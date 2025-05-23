@@ -53,7 +53,7 @@ const Join = () => {
     /** 
      * Handles initiating WebSocket connection with user name
      * */
-    const handleJoin = async () => {
+    const handleJoin = () => {
         webSocketConnect(SIGNALING_URL, handleWebSocketMessage, nameInput);
     }
 

@@ -44,7 +44,18 @@ To run the source code, you will need to have the following tools installed.
 
 > WebRTC Communication Workflow & APIs and Hooks Used
 
+This tutorial handles not only signaling but all server communications via WebSocket.
+To establish a peer-to-peer connection, a signaling process is required.
+The steps involved in the signaling process to connection establishment are as follows.
 
+
+
+
+
+- Key APIs required for the signaling process
+
+
+- Custom hooks created to utilize these key APIs in accordance with the tutorial code
 
 
 <br>
@@ -55,10 +66,10 @@ To run the source code, you will need to have the following tools installed.
 
 
 
+
 <br><br>
 
 ## 🏁 Getting Started
-
 
 
 

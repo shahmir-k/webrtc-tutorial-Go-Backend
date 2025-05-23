@@ -38,7 +38,7 @@ const Home = () => {
     /** 
      * Handles when user clicks a user card to request a call 
      * */
-    const handleRequestCall = (callee: User) => {
+    const handleRequestCall = useCallback((callee: User) => {
         const calleeName = callee.name;
         const status = callee.inCall;
         if (status) {
@@ -54,12 +54,12 @@ const Home = () => {
         webSocketSend(callMessage);
         setCallee(calleeName);
         setWaitingCall(true);
-    }
+    }, [name, webSocketSend]);
 
     /** 
      * Handles call cancellation (by caller or callee) 
      * */
-    const handleCancelCall = (receiver: string) => {
+    const handleCancelCall = useCallback((receiver: string) => {
         const cancelCallMessage = {
             type: CANCEL_CALL,
             sender: name,
@@ -71,7 +71,7 @@ const Home = () => {
         setCaller('');
         setWaitingCall(false);
         setIncomingCall(false);
-    }
+    }, [name, webSocketSend])
 
     /**
      * Handles and displays the UI when an incoming call is received.
@@ -94,7 +94,7 @@ const Home = () => {
     /**
      * Handles accepting the incoming call and navigates to the call room.
      */
-    const handleAcceptCall = (peer: string) => {
+    const handleAcceptCall = useCallback((peer: string) => {
         const acceptCallMessage = {
             type: ACCEPT_CALL,
             sender: name,
@@ -103,7 +103,7 @@ const Home = () => {
 
         webSocketSend(acceptCallMessage);
         handleNavigateToCall(name!, CALLEE, peer);
-    }
+    }, [name, caller, webSocketSend, handleNavigateToCall])
 
     /**
      * Handles navigation to the call room after the call request is accepted.
