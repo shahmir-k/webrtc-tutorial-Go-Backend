@@ -56,10 +56,11 @@ The steps involved in the signaling process to connection establishment are as f
 4. Peer B receives the SDP(offer) and sets it as its remote description - `Peer B`
 5. Peer B creates an SDP(answer) in response to the received SDP(offer)  - `Peer B`
 6. Peer B sets its generated SDP(answer) as its local description and sends it to Peer A - `Peer B`
-7. Both peers exchange the ICE candidates they collected and add the remote candidates - `Peer A`, `Peer B`
+7. Peer A receives the SDP(answer) and sets it as its remote description - `Peer A`
+8. Both peers exchange the ICE candidates they collected and add the remote candidates - `Peer A`, `Peer B`
     - Each peer begins gathering its own ICE candidates after completing SDP creation.
 A peer can only add the other peer's candidates after setting the remote SDP
-8. Once ICE candidate exchange is complete and a viable candidate pair is found, the connection is successfully established - `Peer A`, `Peer B`
+9. Once ICE candidate exchange is complete and a viable candidate pair is found, the connection is successfully established - `Peer A`, `Peer B`
 
 
 
