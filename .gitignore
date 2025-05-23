@@ -23,7 +23,7 @@ yarn-error.log*
 
 
 .gradle
-# /backend/build/
+/backend/build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
