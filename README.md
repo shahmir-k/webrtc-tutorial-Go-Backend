@@ -121,12 +121,6 @@ Unlike local environments, real-world peer networks are often restricted by NATs
 <br><br>
 
 ## 💥 Issue
-해당 튜토리얼 코드에 대한 문제나 질문이 있다면 저장소 페이지 상단에 이슈탭을 통해서 이슈를 작성해주면 매우 고마울 것 같다. 확인하는대로 답변을 달겠다. 이슈 작성 절차는 다음과 같다.
-
-1. 이슈 탭 클릭
-2. 뉴 이슈 클릭
-3. 커스텀 이슈 템플릿 클릭
-4. 적절한 타이틀을 작성하고 각 항목 작성 후 생성
 
 If you encounter any issues or have questions about the tutorial code, I'd really appreciate it if you could open an issue using the "Issues" tab at the top of the repository page. I'll respond as soon as possible. To create an issue, please follow these steps:
 
