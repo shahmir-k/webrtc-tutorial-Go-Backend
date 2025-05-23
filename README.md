@@ -42,7 +42,7 @@ To run the source code, you will need to have the following tools installed.
 
 <br>
 
-> WebRTC Communication Workflow & APIs and Hooks Used
+> WebRTC Communication Workflow
 
 This tutorial handles not only signaling but all server communications via WebSocket.
 To establish a peer-to-peer connection, a signaling process is required.
@@ -62,24 +62,51 @@ The steps involved in the signaling process to connection establishment are as f
 A peer can only add the other peer's candidates after setting the remote SDP
 9. Once ICE candidate exchange is complete and a viable candidate pair is found, the connection is successfully established - `Peer A`, `Peer B`
 
+<br>
 
-
+> Key APIs required for the signaling process for video calling
+- `new RTCPeerConnection()`
+    - Creates a new WebRTC connection instance for peer-to-peer communication
+- `peerConnection.ontrack = (event) => {}`
+    - Triggered when a media track (audio or video) is received from the remote peer
+- `peerConnection.onicecandidate = (event) => {}`
+    - Called when a new ICE candidate is discovered
+- `peerConnection.oniceconnectionstatechange = (event) => {}`
+    - Monitors changes in the ICE connection state (e.g., connected, disconnected)
+- `navigator.mediaDevices.getUserMedia()`
+    - Requests access to the user's camera and microphone
+- `peerConnection.createOffer()`
+    - Creates an SDP offer to initiate a WebRTC connection with another peer
+- `peerConnection.createAnswer()`
+    - Creates an SDP answer in response to an offer from another peer
+- `peerConnection.setLocalDescription()`
+    - Sets the local peer’s SDP (offer or answer) for signaling
+- `peerConnection.setRemoteDescription()`
+    - Applies the received SDP from the remote peer
+- `peerConnection.addIceCandidate()`
+    - Adds an ICE candidate received from the remote peer to establish connectivity
 
 <br>
 
-- Key APIs required for the signaling process
+> Custom hooks created to utilize these key APIs in accordance with the tutorial code
 
-
-<br>
-
-- Custom hooks created to utilize these key APIs in accordance with the tutorial code
-
+A custom WebRTC hook was implemented to establish a peer-to-peer connection through user interaction in the call page component.
+It is located at [`/frontend/src/hooks/useWebRTC.ts`](https://github.com/BenchPress200/webrtc-tutorial/blob/main/frontend/src/hooks/useWebRTC.ts)
 
 <br>
 
 > Requirements for Production Deployment
 
+When deploying a WebRTC-based feature to a production environment, there are several critical considerations beyond what is covered in this tutorial:
 
+- Automated Signaling Flow<br>
+In this tutorial, the signaling process is manually triggered by user interactions (e.g., button clicks). However, in a real-world service, signaling should be initiated and completed automatically—such as sending an offer and receiving an answer—without requiring direct user actions. This ensures a seamless connection experience.
+
+- Ping-Pong Mechanism<br>
+Since signaling is handled over WebSocket in this tutorial, production environments must account for possible disconnections caused by NATs, firewalls, load balancers, or web servers that enforce idle timeouts. If the WebSocket connection is terminated during signaling, the peer connection cannot be established. To resolve this, a ping-pong mechanism should be implemented to keep the signaling connection alive.
+
+- TURN Server Deployment<br>
+Unlike local environments, real-world peer networks are often restricted by NATs or firewalls, which can prevent peers from exchanging usable IP and port information. In such cases, a TURN (Traversal Using Relays around NAT) server acts as a relay to facilitate media transmission. Deploying a TURN server is essential to ensure reliable connectivity across various network conditions.
 
 
 
