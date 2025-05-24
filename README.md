@@ -1,4 +1,4 @@
-# webrtc-tutorial
+# <img src="https://static-00.iconduck.com/assets.00/webrtc-icon-2048x1987-45puxjf4.png" width="24"/> WebRTC Tutorial
 This repository serves as a hands-on guide for WebRTC. It aims to clearly demonstrate how peer-to-peer connections are established and how video streams are exchanged using WebRTC.
 
 > [!NOTE]
@@ -9,7 +9,6 @@ This repository serves as a hands-on guide for WebRTC. It aims to clearly demons
 
 ### 🌃 Preview
 <img src="https://github.com/user-attachments/assets/fa93cf68-b764-4b95-9bc8-ee9a3e8de09d" width="600"/>
-
 
 <br>
 
@@ -35,6 +34,7 @@ This repository serves as a hands-on guide for WebRTC. It aims to clearly demons
 This tutorial code can be tested in a local development environment.
 To run the source code, you will need to have the following tools installed.
 - VS Code
+- Chrome
 - node (v22.10.0)
 - npm (v10.9.0)
 - IntelliJ IDEA
@@ -114,7 +114,103 @@ Unlike local environments, real-world peer networks are often restricted by NATs
 <br><br>
 
 ## 🏁 Getting Started
-writing...
+### 1. Clone Repository
+```
+git clone https://github.com/BenchPress200/webrtc-tutorial
+```
+Clone the tutorial repository to your local development environment.
+
+<br>
+
+### 2. Open the Frontend Code
+<img src="" width="600"/><br>
+Open `webrtc-tutorial/frontend` directory in VSCode to run the React app.
+
+<br>
+
+### 3. Install Required Packages
+<img src="" width="600"/><br>
+```
+npm install
+```
+In the VSCode window you just opened, open the terminal and run `npm install` to install the necessary packages.
+
+<br>
+
+### 4. Run the React App
+<img src="" width="600"/><br>
+```
+npm start
+```
+After the installation is complete, run `npm start` in the terminal to launch the React application.
+
+<br>
+
+### 5. Open the Backend Code in IntelliJ
+<img src="" width="600"/><br>
+To run the Spring Boot app, open `webrtc-tutorial/backend` directory as a Gradle project in IntelliJ.
+
+<br>
+
+### 6. Configure Lombok
+<img src="" width="600"/><br>
+Check the settings to ensure Lombok is working properly.
+
+
+<br>
+
+### 7. Run the Spring Boot App
+<img src="" width="600"/><br>
+Run the Spring Boot application.
+
+
+<br>
+
+### 8. Access the React App
+<img src="" width="600"/><br>
+```
+http://localhost:3000
+```
+Open your browser and launch two tabs with http://localhost:3000.
+
+<br>
+
+### 9. Allow Access to Microphone and Camera
+<img src="" width="600"/><br>
+Allow the browser to access media devices (camera and microphone). If access is not granted, errors may occur.
+
+<br>
+
+### 10. Register Test Users
+<img src="" width="600"/><br>
+Register as Patrick and SpongeBob, respectively.
+
+<br>
+
+### 11. Initiate a Call
+<img src="" width="600"/><br>
+Call SpongeBob, who then accepts the call. After that, both users are taken to the call page.
+
+
+<br>
+
+
+### 12. Signaling Process
+| Step | Image | Action |
+|------|--------|------|
+| 1    | <img src="" width="600"/> |  |
+| 2    | <img src="" width="600"/> | |
+| 3    | <img src="" width="600"/> | |
+| 4    | <img src="" width="600"/> | |
+| 5    | <img src="" width="600"/> | |
+
+
+<br> 
+
+
+### 13. Start the Video Call
+<img src="" width="600"/><br>
+Start the video call.
 
 
 
