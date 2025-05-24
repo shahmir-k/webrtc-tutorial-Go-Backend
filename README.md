@@ -123,13 +123,18 @@ Clone the tutorial repository to your local development environment.
 <br>
 
 ### 2. Open the Frontend Code
-<img src="" width="600"/><br>
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/4ffd7a3d-1609-429a-a473-ecd0645e3d86" height="300"/>
+  <img src="https://github.com/user-attachments/assets/8cf5d497-6f29-40d8-92cc-c3392af09d67" height="300"/>
+</p>
+
 Open `webrtc-tutorial/frontend` directory in VSCode to run the React app.
 
 <br>
 
+
 ### 3. Install Required Packages
-<img src="" width="600"/><br>
+<img alt="스크린샷 2025-05-24 오후 8 11 56" src="https://github.com/user-attachments/assets/10eaec70-5101-4502-a673-eb304657296d" width="600"/><br>
 ```
 npm install
 ```
@@ -138,7 +143,12 @@ In the VSCode window you just opened, open the terminal and run `npm install` to
 <br>
 
 ### 4. Run the React App
-<img src="" width="600"/><br>
+<p align="left">
+<img alt="스크린샷 2025-05-24 오후 8 13 43" src="https://github.com/user-attachments/assets/f61cbb80-fd37-4b22-bad9-c07f4e36403c" height="350"/>
+<img alt="스크린샷 2025-05-24 오후 8 23 09" src="https://github.com/user-attachments/assets/e8599891-3d24-4fa0-866f-f0c5c57f5a51" height="350"/>
+</p>
+
+
 ```
 npm start
 ```
@@ -147,27 +157,39 @@ After the installation is complete, run `npm start` in the terminal to launch th
 <br>
 
 ### 5. Open the Backend Code in IntelliJ
-<img src="" width="600"/><br>
+<p align="left">
+<img alt="스크린샷 2025-05-24 오후 8 17 44" src="https://github.com/user-attachments/assets/666e4ef2-58e8-48f8-86d1-3d29761d70b1" height="350"/>
+<img alt="스크린샷 2025-05-24 오후 8 18 23" src="https://github.com/user-attachments/assets/4f7924c1-9835-445e-8ddb-c095b37d4912" width="300"/>
+</p>
+
 To run the Spring Boot app, open `webrtc-tutorial/backend` directory as a Gradle project in IntelliJ.
 
 <br>
 
 ### 6. Configure Lombok
-<img src="" width="600"/><br>
-Check the settings to ensure Lombok is working properly.
+<p align="left">
+    <img alt="스크린샷 2025-05-24 오후 8 25 38" src="https://github.com/user-attachments/assets/bb5862bf-2df6-4c4c-82e4-b1257dae11cc" height="350"/>
+    <img alt="스크린샷 2025-05-24 오후 8 24 08" src="https://github.com/user-attachments/assets/3ad00cb0-8853-49a6-8dc3-d45716e5cda6" height="350"/>
+</p>
 
+Check the IntelliJ settings to ensure Lombok is working properly.
 
 <br>
 
 ### 7. Run the Spring Boot App
-<img src="" width="600"/><br>
+<p align="left">
+    <img alt="스크린샷 2025-05-24 오후 8 28 58" src="https://github.com/user-attachments/assets/d456ca7f-8b03-4147-80dd-ebef8c249ffc" width="500"/>
+    <img alt="스크린샷 2025-05-24 오후 8 29 28" src="https://github.com/user-attachments/assets/c37f570d-3483-41f0-8148-697d98b98958" width="500"/>
+</p>
+
 Run the Spring Boot application.
 
 
 <br>
 
 ### 8. Access the React App
-<img src="" width="600"/><br>
+<img alt="스크린샷 2025-05-24 오후 8 32 55" src="https://github.com/user-attachments/assets/e357a76c-65ec-4b81-b023-46a4e23d3697" width="800"/><br>
+
 ```
 http://localhost:3000
 ```
@@ -176,19 +198,27 @@ Open your browser and launch two tabs with http://localhost:3000.
 <br>
 
 ### 9. Allow Access to Microphone and Camera
-<img src="" width="600"/><br>
+<img alt="스크린샷 2025-05-24 오후 8 34 36" src="https://github.com/user-attachments/assets/cf748c71-4a29-46b6-b121-05b041d018be" width="600"/><br>
 Allow the browser to access media devices (camera and microphone). If access is not granted, errors may occur.
 
 <br>
 
 ### 10. Register Test Users
-<img src="" width="600"/><br>
+<img alt="스크린샷 2025-05-24 오후 8 36 43" src="https://github.com/user-attachments/assets/a892de04-25cd-4ac2-9b20-6541b3d3324c" height="400"/> <br>
+
+<img alt="스크린샷 2025-05-24 오후 8 37 43" src="https://github.com/user-attachments/assets/43dca202-627f-4d64-a1d4-cab9191c6443" height="400"/> <br>
+
 Register as Patrick and SpongeBob, respectively.
 
 <br>
 
 ### 11. Initiate a Call
-<img src="" width="600"/><br>
+<img alt="스크린샷 2025-05-24 오후 8 41 20" src="https://github.com/user-attachments/assets/7f47fd36-19dc-4e0e-9634-f0d609b75cb1" height="400" /> <br>
+
+<img alt="스크린샷 2025-05-24 오후 8 42 14" src="https://github.com/user-attachments/assets/7a7d647d-b30a-43b7-b5f9-20c54876963c" height="400" /> <br>
+
+<img alt="스크린샷 2025-05-24 오후 8 42 34" src="https://github.com/user-attachments/assets/9d7c5160-882c-4d27-82e9-c458e9d71d4b" height="400" /> <br>
+
 Call SpongeBob, who then accepts the call. After that, both users are taken to the call page.
 
 
