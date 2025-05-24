@@ -204,21 +204,13 @@ Allow the browser to access media devices (camera and microphone). If access is 
 <br>
 
 ### 10. Register Test Users
-<img alt="스크린샷 2025-05-24 오후 8 36 43" src="https://github.com/user-attachments/assets/a892de04-25cd-4ac2-9b20-6541b3d3324c" height="400"/> <br>
-
-<img alt="스크린샷 2025-05-24 오후 8 37 43" src="https://github.com/user-attachments/assets/43dca202-627f-4d64-a1d4-cab9191c6443" height="400"/> <br>
-
+<img alt="스크린샷 2025-05-24 오후 8 34 36" src="https://github.com/user-attachments/assets/8119228b-228d-4e07-aba7-98fe3941c049" width="600"/><br>
 Register as Patrick and SpongeBob, respectively.
 
 <br>
 
 ### 11. Initiate a Call
-<img alt="스크린샷 2025-05-24 오후 8 41 20" src="https://github.com/user-attachments/assets/7f47fd36-19dc-4e0e-9634-f0d609b75cb1" height="400" /> <br>
-
-<img alt="스크린샷 2025-05-24 오후 8 42 14" src="https://github.com/user-attachments/assets/7a7d647d-b30a-43b7-b5f9-20c54876963c" height="400" /> <br>
-
-<img alt="스크린샷 2025-05-24 오후 8 42 34" src="https://github.com/user-attachments/assets/9d7c5160-882c-4d27-82e9-c458e9d71d4b" height="400" /> <br>
-
+<img alt="스크린샷 2025-05-24 오후 8 34 36" src="https://github.com/user-attachments/assets/536b54ae-4913-443d-a22f-0a67cfe99eb3" width="600"/><br>
 Call SpongeBob, who then accepts the call. After that, both users are taken to the call page.
 
 
@@ -226,22 +218,16 @@ Call SpongeBob, who then accepts the call. After that, both users are taken to t
 
 
 ### 12. Signaling Process
-| Step | Image | Action |
-|------|--------|------|
-| 1    | <img src="" width="600"/> |  |
-| 2    | <img src="" width="600"/> | |
-| 3    | <img src="" width="600"/> | |
-| 4    | <img src="" width="600"/> | |
-| 5    | <img src="" width="600"/> | |
+<img alt="스크린샷 2025-05-24 오후 8 34 36" src="https://github.com/user-attachments/assets/ad29e739-b8f5-4cf0-9476-eee82cbf58f4" width="600"/><br>
+
 
 
 <br> 
 
 
 ### 13. Start the Video Call
-<img src="" width="600"/><br>
+<img src="https://github.com/user-attachments/assets/836fadef-59ff-46fe-bab2-672cd2a52b1f" width="600"/><br>
 Start the video call.
-
 
 
 <br><br>
