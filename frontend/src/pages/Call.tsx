@@ -471,11 +471,11 @@ const Call = () => {
                                     order={4}
                                     title={'Exchange ICE Candidates'}
                                     description={'Gather and exchange ICE candidates to establish the network connection. Candidates are collected automatically when sending an offer or answer, and exchanged without user action.'}
-                                    icon={gatheringIceCandidateLoading ?
+                                    icon={!completeIceCandidateExchange && gatheringIceCandidateLoading ?
                                         <Loader2 size={18} color={'white'} className='spin' /> :
                                         <Combine size={18} color={'white'} />
                                     }
-                                    buttonText={'Gather And Send Candidates'}
+                                    buttonText={'Gather And Exchange Candidates'}
                                     handleClickButton={() => { }}
                                     status={candidateStepStatus}
                                     isVideo={false}

@@ -242,6 +242,41 @@ Start the video call.
 
 <br><br>
 
+## ⚠️ Note on ICE Connection Behavior During Local Testing
+In local test environments, you may observe that the callee (the user who receives the call) reaches an iceConnectionState === 'connected' status before the caller has finished setting the callee’s answer or adding ICE candidates.
+
+This is not a bug, but a valid outcome under WebRTC’s behavior.
+
+<br>
+
+### ✅ Why this happens<br>
+WebRTC uses Trickle ICE by default, where ICE candidates are exchanged after the offer/answer is set.
+
+However, if a viable ICE candidate (e.g., a host candidate on the same LAN) is already included in the SDP, a peer connection may reach connected even if the other side has not completed their setup.
+
+This can also occur more often in local networks (with no NAT or STUN/TURN needed), where direct connectivity is easily established.
+
+<br>
+
+### 🔁 What this means<br>
+The callee can technically enter a connected state and begin sending media before the caller has finished applying the answer or ICE candidates.
+
+Once the caller completes setting the callee’s answer and adds the pending candidates, the connection becomes fully established from both sides.
+
+As a result, the call can proceed successfully even if the callee’s connection appears to be completed slightly earlier.
+
+### 🛠️ Example Scenario<br>
+1. Patrick (caller) creates an offer and starts gathering candidates.
+2. SpongeBob (callee) receives the offer, sets it, creates an answer, and sends it back.
+3. As SpongeBob gathers and sends his ICE candidates, he may already reach connected if a usable candidate pair is found (e.g., host-host).
+4. Patrick, who hasn't yet set the answer or added candidates, appears “in progress.”
+5. Once Patrick applies SpongeBob’s answer and adds his candidates, the connection is established from his side as well.
+
+Both users can now proceed to a stable call state with no functional issues.
+
+
+<br><br>
+
 ## 💥 Issue
 
 If you encounter any issues or have questions about the tutorial code, I'd really appreciate it if you could open an issue using the "Issues" tab at the top of the repository page. I'll respond as soon as possible. To create an issue, please follow these steps:
