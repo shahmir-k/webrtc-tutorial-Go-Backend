@@ -220,6 +220,16 @@ Call SpongeBob, who then accepts the call. After that, both users are taken to t
 ### 12. Signaling Process
 <img alt="스크린샷 2025-05-24 오후 8 34 36" src="https://github.com/user-attachments/assets/ad29e739-b8f5-4cf0-9476-eee82cbf58f4" width="600"/><br>
 
+1. `Patrick` and `SpongeBob` each set up their own video and microphone.
+2. `SpongeBob`, who receives the call, waits for `Patrick’s` offer. `Patrick₩, who initiates the call, creates and sends the offer first.
+    - When `Patrick` creates the offer, his ICE candidates start to gather. As each candidate is collected, it is immediately sent to `SpongeBob`.
+3. `SpongeBob` receives `Patrick’s` offer and sets it as the remote description.
+    - Once the remote offer is set, `SpongeBob` is ready to add ICE candidates from `Patrick`. He adds any candidates that were buffered during the wait and continues to add new ones as they arrive.
+4. `Patrick`, after sending the offer, waits for `SpongeBob’s` answer. `SpongeBob` creates and sends the answer to `Patrick`.
+    - When `SpongeBob` creates the answer, his ICE candidates start to gather. As each candidate is collected, it is immediately sent to `Patrick`.
+5. `Patrick` receives `SpongeBob’s` answer and sets it as the remote description.
+    - Once the remote offer is set, `Patrick` is ready to add ICE candidates from `SpongeBob`. He adds any candidates that were buffered during the wait and continues to add new ones as they arrive.
+6. Once both SDP messages have been exchanged and set, and ICE candidate exchange and connection are complete, the final step is marked as 'Done', and the video call becomes active.
 
 
 <br> 
