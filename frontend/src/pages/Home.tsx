@@ -33,8 +33,6 @@ const Home = () => {
         setOnMessage: webSocketSetOnMessage
     } = useWebSocketStore.getState();  // WebSocket managed by Zustand
 
-
-
     /** 
      * Handles when user clicks a user card to request a call 
      * */
@@ -153,6 +151,7 @@ const Home = () => {
         if (!webSocketIsConnected) {
             webSocketConnect(SIGNALING_URL, handleWebSocketMessage, name!);
         } else {
+
             webSocketSetOnMessage(handleWebSocketMessage);
 
             const activeUsersMessage = {
