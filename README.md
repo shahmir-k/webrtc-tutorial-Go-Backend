@@ -3,7 +3,7 @@ This repository serves as a hands-on guide for WebRTC. It aims to clearly demons
 
 > [!NOTE]
 > You can find a more detailed explanation of the basic concepts of WebRTC and this tutorial’s code in my blog post. <br>
-> [🔗 Coming soon]()
+> [🔗 BenchPress200's Tech Blog](https://phellinus-linteus.tistory.com/3)
 
 <br>
 
