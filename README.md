@@ -1,26 +1,32 @@
 # <img src="https://static-00.iconduck.com/assets.00/webrtc-icon-2048x1987-45puxjf4.png" width="24"/> WebRTC Tutorial
 
-### Go Backend Instructions
-
-The Go backend is written to completely replace the original Java backend. To run it, do the following:
-
-Open the go-backend folder in powershell or terminal... Or switch directories using the command below:
-`cd go-backend`
-
-Install all dependencies using command:
-`go mod download`
-
-Verify and clean up dependencies using command:
-`go mod tidy`
-
-Run the application with command:
-`go run main.go`
-
 This repository serves as a hands-on guide for WebRTC. It aims to clearly demonstrate how peer-to-peer connections are established and how video streams are exchanged using WebRTC.
 
 > [!NOTE]
 > You can find a more detailed explanation of the basic concepts of WebRTC and this tutorial’s code in my blog post. <br> > [🔗 BenchPress200's Tech Blog](https://phellinus-linteus.tistory.com/3)
 
+<br>
+
+### Go Backend Instructions
+
+The Go backend is written to completely replace the original Java backend. To run it, do the following:
+
+<br>
+Open the go-backend folder in powershell or terminal... Or switch directories using the command below:
+<br>
+`cd go-backend`
+
+Install all dependencies using command:
+<br>
+`go mod download`
+
+Verify and clean up dependencies using command:
+<br>
+`go mod tidy`
+
+Run the application with command:
+<br>
+`go run main.go`
 <br>
 
 ### 🌃 Preview
