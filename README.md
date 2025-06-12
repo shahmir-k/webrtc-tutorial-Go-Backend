@@ -10,7 +10,6 @@ This repository serves as a hands-on guide for WebRTC. It aims to clearly demons
 ### Go Backend Instructions
 
 The Go backend is written to completely replace the original Java backend. To run it, do the following:
-
 <br>
 Open the go-backend folder in powershell or terminal... Or switch directories using the command below:
 <br>
